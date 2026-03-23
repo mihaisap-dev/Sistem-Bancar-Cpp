@@ -1,23 +1,23 @@
-# Sistem de Gestiune Bancară (C++)
+# Banking Management System (C++)
 
-Acesta este un proiect personal dezvoltat în C++ care simulează operațiunile esențiale ale unui sistem bancar prin intermediul terminalului. Proiectul pune accent pe **securitatea datelor**, **validarea riguroasă a input-ului** și **persistența informațiilor**.
+This is a personal C++ project that simulates the essential operations of a banking system via a Command Line Interface (CLI). The project focuses on **data security**, **rigorous input validation**, and **information persistence**.
 
-## Funcționalități Principale
+##  Key Features
 
-* **Gestiune Conturi**: Creare conturi cu ID unic și nume titular.
-* **Securitate Avansată**: 
-    * Acces protejat prin parolă (suportă litere, cifre și caractere speciale).
-    * Ștergere cont securizată prin confirmare dublă (Parolă + Text "DA").
-* **Validare Robustă (Anti-Crash)**:
-    * Protecție împotriva input-ului de tip text în câmpuri numerice.
-    * Verificarea soldului pentru operațiunile de retragere.
-* **Persistența Datelor**: Salvare automată și încărcare din fișierul `bank_data.txt`.
+* **Account Management**: Create accounts with unique IDs and account holder names.
+* **Advanced Security**: 
+    * Password-protected access (supports letters, numbers, and special characters).
+    * Secure account deletion using double-confirmation logic (Password + "YES" string).
+* **Robust Validation (Anti-Crash)**:
+    * Protection against string/text input in numerical fields using `cin.fail()` checks.
+    * Real-time balance verification for withdrawal operations.
+* **Data Persistence**: Automatic saving and loading of account information from a local `bank_data.txt` file.
 
 ---
 
-## Instalare și Rulare
+##  Installation and Execution
 
-Pentru a compila și rula proiectul pe Mac sau Linux, asigură-te că folosești standardul C++17:
+To compile and run the project on macOS or Linux, ensure you are using the C++17 standard:
 
 ```bash
 g++ -std=c++17 Sistem_Bancar.cpp -o Sistem_Bancar && ./Sistem_Bancar
